@@ -1,0 +1,68 @@
+<!-- Name: login.html
+Purpose: Login and Register pages of the website
+Date: 06/09/2020
+Authors: Raj Ray Chaudhury
+Dependencies: style6.css  -->
+
+
+<html>
+<!-- Head section to link html to stylesheet, import custom fonts and mention title of the website -->
+
+<head>
+    <title>Chill-a-lil - Login</title>
+    <link rel="stylesheet" href="styled.css">
+</head>
+<!-- Body section to display main content of the website -->
+
+<body>
+    <div class="hero">
+        <div class="form-box">
+            <div class="button-box">
+                <div id="btn"></div>
+
+                <button type="button" class="toggle-btn" onclick="login()">Log In</button>
+                <button type="button" class="toggle-btn" onclick="register()">Register</button>
+            </div>
+            <p>
+                <center>WELCOME TO CHILL-A-LIL
+            </p>
+            </center>
+            <form id="login" class="input-group">
+                <input type="text" class="input-field" name="userid" placeholder="User Id" required>
+                <input type="password" name="pswrd" class="input-field" placeholder="Enter Password" required>
+                <input type="checkbox" class="check-box"><span>Remember Password</span>
+                <button type="submit" onclick="check(this.form)" class="submit-btn">Log In</button>
+            </form>
+
+            }
+            </script>
+            <form id="register" class="input-group">
+                <input type="text" class="input-field" placeholder="User Id" required>
+                <input type="em" class="input-field" placeholder="Email Id" required>
+                <input type="pa
+                    ssword" class="input-field" placeholder="Enter Password" required>
+                <input type="checkbox" class="check-box"><span>I agree to the terms and conditions</span>
+                <button type="submit" class="submit-btn">Register</button>
+
+        </div>
+    </div>
+    <script>
+        var x = document.getElementById("login");
+        var y = document.getElementById("register");
+        var z = document.getElementById("btn");
+
+        function register() {
+            x.style.left = "-400px";
+            y.style.left = "50px";
+            z.style.left = "110px";
+        }
+
+        function login() {
+            x.style.left = "50px";
+            y.style.left = "450px";
+            z.style.left = "0";
+        }
+    </script>
+</body>
+
+</html>
